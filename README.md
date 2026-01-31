@@ -1,0 +1,2 @@
+# End-to-End-Bank_Customer_Churn-Analysis-using-Excel-SQL-Python-Tableau
+End-to-end bank customer churn analysis using a Kaggle dataset (10K+ records). Performed data validation in Excel, SQL-based business analysis (30+ queries), statistical testing in Python, and built interactive multi-view Tableau dashboards to identify churn drivers, high-risk segments, and deliver actionable business insights.
