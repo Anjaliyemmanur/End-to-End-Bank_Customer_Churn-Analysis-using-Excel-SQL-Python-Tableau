@@ -101,7 +101,7 @@ o Assessed the relationship between tenure and churn probability to identify pea
   o Single-product vs multi-product customers
 
 4️⃣ Statistical Validation (Python – Google Colab)
-🔗 https://colab.research.google.com/drive/1nNM3InBKWuCXzadZKp-MEDm9QzwnhRah#scrollTo=xW3kZOk2tty7
+- 🔗 https://colab.research.google.com/drive/1nNM3InBKWuCXzadZKp-MEDm9QzwnhRah#scrollTo=xW3kZOk2tty7
 > Objective: Statistically validate observed churn patterns.
 Tests performed:
 - Chi-square tests:
