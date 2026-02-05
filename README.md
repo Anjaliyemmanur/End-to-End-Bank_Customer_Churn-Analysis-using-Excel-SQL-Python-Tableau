@@ -1,7 +1,7 @@
-📊 Bank Customer Churn Analysis Project
+# 📊 Bank Customer Churn Analysis Project
 End-to-End Analytics Project | SQL • Python • Tableau • Excel
 
-📌 Project Overview
+### 📌 Project Overview
 This project analyzes historical bank customer data to investigate the causes of customer churn and support retention efforts through data-driven insights and recommendations.
 It follows a real-world analytics workflow:
 - Data validation and quality checks in Excel
@@ -9,7 +9,7 @@ It follows a real-world analytics workflow:
 - Statistical testing and modeling in Python
 - Insight communication through interactive Tableau dashboards
 
-🎯 Business Problem
+### 🎯 Business Problem
 The bank aims to strengthen customer retention by:
 - Determining the primary factors influencing churn
 - Segmenting customers based on churn risk
@@ -18,7 +18,7 @@ The bank aims to strengthen customer retention by:
   
 Outcome: Deliver actionable insights that help reduce churn and improve long-term customer relationships.
 
-Source: Kaggle – Bank Customer Churn Dataset
+### Source: Kaggle – Bank Customer Churn Dataset
 🔗 Dataset link
 
 Records: 10,000+ customers
@@ -41,7 +41,7 @@ IsActiveMember-Active membership status (1 = Active, 0 = Inactive)
 EstimatedSalary-Estimated annual salary
 Exited- Churn indicator (1 = churned, 0 = retained)
 
-🛠 Tools & Technologies
+### 🛠 Tools & Technologies
 Excel
 - Initial data sanity checks
 - Null value inspection
@@ -62,15 +62,15 @@ Tableau
 - Business-focused storytelling
   
 Version Control
-GitHub
+- GitHub
 
-🔍 Data Validation & Pre-Processing
+### 🔍 Data Validation & Pre-Processing
 Before performing any analysis, the raw CSV dataset was reviewed in Excel to:
 Check for missing or null values
 Ensure consistency before loading data into BigQuery
 This step ensured data quality and reduced the risk of incorrect analytical conclusions.
 
-🔎 Analysis Methodology
+### 🔎 Analysis Methodology
 1️⃣ Descriptive Analysis (SQL – BigQuery)
 > Objective: Understand the customer base and overall churn patterns.
 - Customer base overview: total customers, churn vs retention, and overall churn rate
@@ -118,7 +118,7 @@ These tests confirmed whether observed churn drivers were statistically signific
 - Assessed feasibility of churn prediction using available customer attributes
 - Proposed a churn risk scoring framework to prioritize retention efforts
 
-📊 Tableau Dashboards
+### 📊 Tableau Dashboards
 An interactive Tableau dashboard with navigation buttons was developed, comprising three focused views:
 🧭 Dashboard 1: Customer Churn Overview
 - Overall churn KPIs
@@ -135,14 +135,14 @@ An interactive Tableau dashboard with navigation buttons was developed, comprisi
 - Geography-specific churn hotspots
 - Business-ready insights and recommendations
 
-💡 Key Insights
+### 💡 Key Insights
 - Inactive customers consistently show higher churn risk
 - Customers with only one product are more likely to churn
 - High account balance does not guarantee customer loyalty
 - Certain geographies exhibit higher churn rates
 - Churn probability peaks within specific tenure ranges
 
-✅ Business Recommendations
+### ✅ Business Recommendations
 Business Recommendation to mitigate Churn
  -  Prioritize inactive customers – Highest churn risk across segments
  -  Act early on single-product users – Promote bundles and cross-sell
