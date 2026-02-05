@@ -5,7 +5,7 @@ Questions Answered:
 
 Link to colab->Readme
 
-Insights:
+**Insights**:
 Churn is statistically associated with Geography, Activity Status, and Number of Products (p-values ≪ 0.05), confirming these are true churn drivers and not random patterns.
 The difference in average balance between churned and retained customers is statistically significant, indicating that higher balances do not guarantee loyalty.
 Gender shows statistical significance due to large sample size, but the practical business impact is limited, as the gender split remains broadly balanced.
@@ -19,3 +19,6 @@ Variables with weak or no predictive power:
 Tenure
 Estimated salary
 Credit card ownership
+
+Predictive Analyis(Conceptual)
+
