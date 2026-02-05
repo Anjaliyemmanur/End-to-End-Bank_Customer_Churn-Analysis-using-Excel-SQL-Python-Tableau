@@ -116,8 +116,10 @@ These tests confirmed whether observed churn drivers were statistically signific
 5️⃣ Predictive & Risk Insights (Conceptual)
 > Objective: Translate insights into actionable risk signals.
 - Identified key churn predictors based on EDA and statistical results
-- Assessed feasibility of churn prediction using available customer attributes
-- Proposed a churn risk scoring framework to prioritize retention efforts
+- Can churn be predicted using available customer attributes?
+-	Which variables are the strongest predictors of churn?
+-	How accurately can we classify churned vs non-churned customers?
+
 
 ### 📊 Tableau Dashboards
 🔗  https://public.tableau.com/app/profile/anjali.yemmanur/viz/Bankerschurn/BankCustomerChurnAnalysis
