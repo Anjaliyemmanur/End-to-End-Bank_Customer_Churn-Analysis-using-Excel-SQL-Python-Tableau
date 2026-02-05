@@ -1,4 +1,4 @@
-📊 Bank Customer Churn Analysis
+📊 Bank Customer Churn Analysis Project
 End-to-End Analytics Project | SQL • Python • Tableau • Excel
 
 📌 Project Overview
@@ -6,7 +6,7 @@ The bank is experiencing customer attrition and wants to understand why customer
 The goal is to provide data-driven insights and actionable recommendations to reduce churn and improve customer retention.
 
 The project follows a real-world analytics workflow:
-- Data validation and sanity checks
+- Data validation and sanity checks using Excel
 - Descriptive and segmentation analysis using SQL
 - Statistical validation using Python
 - Business storytelling using interactive Tableau dashboards
@@ -24,6 +24,7 @@ Provide actionable, data-driven insights to reduce churn and improve customer re
 
 🗂 Dataset Description
 Source: Kaggle – Bank Customer Churn Dataset
+link to dataset-https://www.kaggle.com/datasets/mathchi/churn-for-bank-customers
 Records: 10,000+ customers
 Format: CSV
 Features: 13 columns
