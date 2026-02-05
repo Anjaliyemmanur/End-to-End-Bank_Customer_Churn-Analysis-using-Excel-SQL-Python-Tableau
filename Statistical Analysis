@@ -1,1 +1,21 @@
+Questions Answered:
+1.Is churn statistically associated with: o	Geography? o	Activity status? o	Number of products?
+2.Is the difference in average balance between churned and retained customers statistically significant?
+3.Which variables are the strongest predictors of churn?
 
+Link to colab->Readme
+
+Insights:
+Churn is statistically associated with Geography, Activity Status, and Number of Products (p-values ≪ 0.05), confirming these are true churn drivers and not random patterns.
+The difference in average balance between churned and retained customers is statistically significant, indicating that higher balances do not guarantee loyalty.
+Gender shows statistical significance due to large sample size, but the practical business impact is limited, as the gender split remains broadly balanced.
+Based on chi-square tests and t-tests, the strongest predictors are:
+Age – churn increases in older age groups
+Activity status – inactive customers churn nearly 2× more
+Number of products – single-product users show higher churn
+Geography – Germany exhibits significantly higher churn
+Balance – churned customers hold higher average balances
+Variables with weak or no predictive power:
+Tenure
+Estimated salary
+Credit card ownership
