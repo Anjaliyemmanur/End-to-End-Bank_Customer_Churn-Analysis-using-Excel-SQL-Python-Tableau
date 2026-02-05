@@ -2,47 +2,43 @@
 End-to-End Analytics Project | SQL • Python • Tableau • Excel
 
 📌 Project Overview
-The bank is experiencing customer attrition and wants to understand why customers churn, identify high-risk customer segments, and predict future churn using historical customer data.
-The goal is to provide data-driven insights and actionable recommendations to reduce churn and improve customer retention.
-
-The project follows a real-world analytics workflow:
-- Data validation and sanity checks using Excel
+This project analyzes historical bank customer data to investigate the causes of customer churn and support retention efforts through data-driven insights and recommendations.
+It follows a real-world analytics workflow:
+- Data validation and quality checks in Excel
 - Descriptive and segmentation analysis using SQL
-- Statistical validation using Python
-- Business storytelling using interactive Tableau dashboards
+- Statistical testing and modeling in Python
+- Insight communication through interactive Tableau dashboards
 
 🎯 Business Problem
+The bank aims to strengthen customer retention by:
+- Determining the primary factors influencing churn
+- Segmenting customers based on churn risk
+- Flagging high-value customers vulnerable to attrition
+- Supporting proactive, targeted retention strategies
+Outcome: Deliver actionable insights that help reduce churn and improve long-term customer relationships.
 
-The bank is experiencing customer attrition and wants to:
-- Understand key drivers of churn
-- Identify high-risk customer segments
-- Recognize high-value customers at risk of leaving
-- Enable proactive retention strategies
-
-Goal:
-Provide actionable, data-driven insights to reduce churn and improve customer retention.
-
-🗂 Dataset Description
 Source: Kaggle – Bank Customer Churn Dataset
-link to dataset-https://www.kaggle.com/datasets/mathchi/churn-for-bank-customers
+🔗 Dataset link
+
 Records: 10,000+ customers
 Format: CSV
 Features: 13 columns
 
-Column-Name	Descriptiona
+📋 Column Details
+Column Name	Description
 CustomerId-Unique customer identifier
 Surname-Customer surname
-CreditScore-Credit score
+CreditScore-Customer credit score
 Geography-Customer location (France, Germany, Spain)
 Gender-Customer gender
 Age-Customer age
-Tenure-Years with the bank
+Tenure-Number of years with the bank
 Balance-Account balance
 NumOfProducts-Number of bank products used
-HasCrCard-Credit card ownership (0/1)
-IsActiveMember-Active membership status (0/1)
+HasCrCard-Credit card ownership (1 = Yes, 0 = No)
+IsActiveMember-Active membership status (1 = Active, 0 = Inactive)
 EstimatedSalary-Estimated annual salary
-Exited-Churn flag (1 = churned, 0 = retained)
+Exited- Churn indicator (1 = churned, 0 = retained)
 
 🛠 Tools & Technologies
 Excel
@@ -74,94 +70,98 @@ Ensure consistency before loading data into BigQuery
 This step ensured data quality and reduced the risk of incorrect analytical conclusions.
 
 🔎 Analysis Methodology
-
 1️⃣ Descriptive Analysis (SQL – BigQuery)
-  -Customer Base Overview
-1.	What is the total number of customers? 
-2.	What percentage of customers have churned vs retained?
-3.	What is the overall churn rate?
--Demographic Distribution
-4.	What is the age distribution of customers?
-5.	How are customers distributed by:
-o	Gender
-o	Geography
-6.	Which age groups form the largest customer base?
--Churn Distribution
-7.	How does churn vary by:
-o	Gender
-o	Geography
-o	Age group
-8.	Which demographic segment shows the highest churn rate?
+Objective: Understand the customer base and overall churn patterns.
+- Customer base overview: total customers, churn vs retention, and overall churn rate
+- Demographic distribution: age, gender, and geography (France, Germany, Spain)
+- Churn distribution across demographic groups to identify high-risk segments
 
-2️⃣ Diagnostic Analysis
-(Why is churn happening?)
-Behavioral Differences
-9.	How do churned vs non-churned customers differ in terms of:
--	Average balance
--	Average tenure
--	Average credit score
--	Average number of products
-  Account Activity & Engagement
-10.Does being an active member reduce churn?
-11.Is there a difference in churn between customers who:
-- Have a credit card vs don’t
-- Have 1 product vs multiple products
-Geography-Specific Behavior
-12.	How does customer behavior differ across France, Germany, and Spain?
-13.	Why does churn appear higher in certain geographies?
-14.	Are high-balance customers churning more in specific regions?
-Tenure & Loyalty
-15.	How does tenure impact churn probability?
-16.	At which tenure range does churn peak?
+2️⃣ Diagnostic Analysis — Why is churn happening?
+Objective: Identify behavioral and engagement differences between churned and retained customers.
+- Compared churned vs retained customers by:
+Balance
+Tenure
+Credit score
+Number of products
+- Evaluated the impact of engagement and product usage:
+Active vs inactive customers
+Credit card ownership
+Single-product vs multi-product users
+Analyzed geography-specific patterns to explain regional churn variation
+Assessed the relationship between tenure and churn probability to identify peak churn periods
 
 3️⃣ Customer Segmentation & Profiling — Who is churning?
-👉 Goal: Create business-usable customer profiles.
-Questions to Answer
-1.	Can customers be segmented based on:
-o	Age
-o	Balance
-o	Activity status
-o	Number of products?
-2.	What are the key characteristics of high-risk churn segments?
-3.	Who are the high-value customers (high balance / salary) that are at risk of churn?
-4.	How does churn differ across:
-o	Active vs inactive
-o	Single-product vs multi-product customers
 
-3️⃣ Statistical Analysis (Python – Google Colab)
-Objective: Validate insights statistically
+Objective: Create business-usable customer profiles.
 
-The following tests were performed:
-Chi-Square Tests
-Churn vs Geography
-Churn vs Activity Status
-Churn vs Number of Products
+Segmented customers based on age, balance, activity status, and product usage
 
-Independent T-Test
+Identified characteristics of high-risk churn segments
+
+Flagged high-value customers (high balance / salary) vulnerable to churn
+
+Compared churn behavior across:
+
+Active vs inactive customers
+
+Single-product vs multi-product customers
+
+4️⃣ Statistical Validation (Python – Google Colab)
+
+Objective: Statistically validate observed churn patterns.
+
+Tests performed:
+
+Chi-square tests:
+
+Churn vs geography
+
+Churn vs activity status
+
+Churn vs number of products
+
+Independent t-test:
+
 Difference in average balance between churned and retained customers
-These tests helped confirm whether observed churn patterns were statistically significant rather than due to random variation.
 
-4️⃣ Predictive & Risk Insights (Conceptual)
-Identified key churn predictors based on statistical results and exploratory analysis
+These tests confirmed whether observed churn drivers were statistically significant rather than due to random variation.
+
+5️⃣ Predictive & Risk Insights (Conceptual)
+
+Objective: Translate insights into actionable risk signals.
+
+Identified key churn predictors based on EDA and statistical results
+
 Assessed feasibility of churn prediction using available customer attributes
-Proposed churn risk scoring logic to prioritize retention efforts
+
+Proposed a churn risk scoring framework to prioritize retention efforts
 
 📊 Tableau Dashboards
-An interactive Tableau dashboard with navigation buttons was created, leading to three focused dashboards:
+
+An interactive Tableau dashboard with navigation buttons was developed, comprising three focused views:
 
 🧭 Dashboard 1: Customer Churn Overview
+
 Overall churn KPIs
+
 Churn by age, gender, and geography
+
 High-level customer distribution
 
 🔑 Dashboard 2: Key Drivers of Churn
+
 Activity status vs churn
+
 Product count vs churn
+
 Balance, tenure, and credit score patterns
 
 🚨 Dashboard 3: High-Risk Segments & Insights
+
 High-value customers at risk
+
 Geography-specific churn hotspots
+
 Business-ready insights and recommendations
 
 💡 Key Insights
