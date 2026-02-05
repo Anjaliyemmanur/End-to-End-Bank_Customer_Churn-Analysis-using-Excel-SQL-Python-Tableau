@@ -198,7 +198,18 @@ from demographic_churn
 order by churn_rate desc
 limit 1;
 
-**Insights**:
+**Insights**
+Customers aged 50–59 is the most likely to churn, even though they are not the largest customer group.
+Business interpretation- This the age group, which is not the most senior of the age groups, and not the largest group, but they
+are someone who have the most complex financial needs, The bank may be failing to meet mid-to-late career financial requirements 
+(retirement planning, wealth management, stability).
+There is no major difference in the total customer count between male and female customers, indicating a balanced gender distribution.
+However, the churn rate among female customers is significantly higher than that of male customers (by over 10%), 
+suggesting gender-based differences in retention rather than acquisition.
+Age-group:50-59 are the highest segment of demographic where churn rate is 56.04%.
+
+  
+
 
 
 
