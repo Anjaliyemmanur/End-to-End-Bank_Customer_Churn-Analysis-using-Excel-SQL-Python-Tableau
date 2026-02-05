@@ -21,4 +21,21 @@ Estimated salary
 Credit card ownership
 
 Predictive Analyis(Conceptual)
+Can churn be predicted using available customer attributes?
+-	Which variables are the strongest predictors of churn?- Answered using Statistical Analysis in the aforementioned section.
+
+**Insights**
+Analysis of customer attributes shows that several variables have a statistically significant     
+relationship with churn, meaning they contain predictive information.
+From SQL analysis, chi-square tests, and t-tests, the following attributes were found to be strongly associated with churn:
+•	Age (higher churn in older age groups)
+•	Activity status (inactive members churn nearly 2× more)
+•	Number of products (single-product customers churn more)
+•	Geography (Germany shows significantly higher churn)
+•	Balance (churned customers hold higher average balances)
+
+
+
+
+
 
