@@ -33,6 +33,13 @@ Select Sum(Case when Exited = 1 then 1 else 0 end) * 100.0 / Count (*) as churne
 Select round(avg(Exited) * 100,2) as overall_churn_rate
 from `Customerchurn.Bank_churn_data`;
 
+**Insights** 
+1.The churn analysis is based on a moderately large customer base-10000 customers, which is sufficient to identify meaningful churn patterns and trends.
+2.The churn rate is 20.37%, meaning roughly one in five customers has left the bank.
+  At this scale, churn represents a significant revenue and growth risk. However, with nearly 80% of customers still active, the business has a
+  strong opportunity to reduce future churn through targeted retention strategies focused on high-risk segments.
+3.Roughly 1 in 5 customers is churning, which indicates a significant retention challenge.
+
 Demographic Distribution
 1.	What is the age distribution of customers?
 2.	How are customers distributed by:
@@ -81,6 +88,19 @@ select
 from `customerchurn.bank_churn_data`
 group by age_group
 order by customer_count desc limit 1
+
+**Insights**-
+The bank’s customers are heavily skewed middle aged often more economically active customers, slightly less young or early professionals, the customer count is 
+lesser in the age of older aged people, indicating opportunities for targeted acquisition strategies for early-career customers and tailored products for older customers.
+While statistical testing shows a significant difference in gender counts, this result is influenced by the large dataset size. In practical terms, the gender 
+split is fairly even and does not represent a meaningful demographic imbalance.
+The customer count in France is the highest contributing to around 50% of the customers, where as Germany and Spain contribute to roughly 25% of the
+customers, with Germany having slightly more customers than Spain. This shoes that France is the core base of the bank, while Germany and Spain seem to be the penetrating
+markets. 
+Given France’s strong customer base, the bank can focus on scaling successful strategies already working in this market. Additionally, insights from France—such as 
+product adoption, customer engagement, and retention mechanisms—can be selectively adapted and applied to Germany and Spain. Targeted marketing, localized promotions,
+and loyalty initiatives may help accelerate customer acquisition and growth in these emerging markets.
+
 
 Churn Distribution
 1.	How does churn vary by:
@@ -177,6 +197,10 @@ select
 from demographic_churn
 order by churn_rate desc
 limit 1;
+
+**Insights**:
+
+
 
 
 
