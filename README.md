@@ -119,7 +119,9 @@ These tests confirmed whether observed churn drivers were statistically signific
 - Proposed a churn risk scoring framework to prioritize retention efforts
 
 ### 📊 Tableau Dashboards
+- Link to Dashboard https://public.tableau.com/app/profile/anjali.yemmanur/viz/Bankerschurn/BankCustomerChurnAnalysis
 An interactive Tableau dashboard with navigation buttons was developed, comprising three focused views:
+
 🧭 Dashboard 1: Customer Churn Overview
 - Overall churn KPIs
 - Churn by age, gender, and geography
